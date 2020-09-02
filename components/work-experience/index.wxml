@@ -1,0 +1,11 @@
+<!-- 工作经历组件模板 -->
+<view class='experience-item'>
+  <text class='experience-name'>{{companyName}}</text>
+  <view class='experience-subname'>
+    <text>{{position}}</text>
+    <text class='date-ranges'>{{dateRanges}}</text>
+  </view>
+  <view class='explain'>
+    <text>{{explain}}</text>
+  </view>
+</view>

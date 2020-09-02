@@ -1,0 +1,105 @@
+/**index.wxss**/
+
+#head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #00b38a;
+  padding: 5%;
+}
+
+#head text {
+  color: white;
+}
+
+#head-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#head-info text {
+  font-size: 75%;
+}
+
+#head-icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#head-icon text {
+  margin: 5% 5%;
+}
+
+#body {
+  padding: 5%;
+}
+
+.subtitle {
+  margin: 3% 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.subtitle view {
+  flex: 1;
+  height: 1px;
+  background-color: #eee;
+}
+
+.subtitle text {
+  background-color: #eee;
+  color: #00b38a;
+  margin: 0 1%;
+  padding: 1% 8%;
+  border-radius: 30px;
+}
+.skill,.tool {
+  font-size: 90%;
+  font-weight: 600;
+}
+
+.detail{
+  font-size: 85%;
+  text-indent:0%;
+  line-height: 150%
+}
+
+.tag {
+  float: right;
+  font-size: 70%;
+  color: #00b38a;
+  border: 1px solid #00b38a;
+  padding: 0 1%;
+  border-radius: 5px;
+}
+
+@font-face {font-family: "iconfont";
+  src: url('iconfont.eot?t=1545200281871'); /* IE9*/
+  src: url('iconfont.eot?t=1545200281871#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('data:application/x-font-woff;charset=utf-8;base64,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') format('woff'),
+  url('iconfont.ttf?t=1545200281871') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('iconfont.svg?t=1545200281871#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-duanxin:before { content: "\e647"; }
+
+.icon-zhuye:before { content: "\e627"; }
+
+.icon-phone:before { content: "\e618"; }
+
+.icon-github:before { content: "\f1b4"; }
+.introduce-content {
+  font-size: 85%;
+  text-indent: 3%;
+  line-height: 150%;
+}

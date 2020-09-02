@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "项目介绍",
+  "usingComponents":{
+    "project-item": "../../components/project-item/index"
+  }
+}

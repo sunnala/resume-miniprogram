@@ -1,0 +1,32 @@
+/* 工作经历组件样式 */
+.experience-item{
+  padding: 2% 0;
+}
+.experience-name {
+  font-size: 90%;
+  font-weight: 600;
+}
+
+.experience-subname {
+  margin-top: 2%;
+  font-size: 80%;
+  color: #666;
+}
+
+.date-ranges {
+  float: right;
+  text-align: right;
+  padding: 0 1%;
+}
+
+.explain {
+  margin-top: 2%;
+  display: flex;
+  flex-direction: column;
+}
+
+.explain text {
+  font-size: 85%;
+  text-indent:3%;
+  line-height: 150%
+}

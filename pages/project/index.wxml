@@ -1,0 +1,9 @@
+<!--index.wxml-->
+<view id="project">
+  <!-- 个人项目 -->
+  <scroll-view scroll-y="true">
+    <view id="project-content" wx:for="{{project}}">
+      <project-item projectNum="{{item.projectNum}}" projectName="{{item.projectName}}"  projectType="{{item.projectType}}" projectDesc="{{item.projectDesc}}" skillDesc="{{item.skillDesc}}" responsibilityDesc="{{item.responsibilityDesc}}"></project-item>
+    </view>
+  </scroll-view>
+</view>

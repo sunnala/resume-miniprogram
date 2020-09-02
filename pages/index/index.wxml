@@ -1,0 +1,81 @@
+<!--index.wxml-->
+<view id="resume">
+  <!-- 个人信息 -->
+  <view id='head'>
+    <text style='font-size:180%;font-weight: bold'>李洋</text>
+    <text style='font-size:150%;padding:3% 0;border-top:1px solid #00A982;border-bottom:2px solid #00A982;margin:3% 0'>Web前端工程师</text>
+    <view>
+      <view id='head-info'>
+        <text>男 / 1991.06</text>
+      </view>
+      <view id='head-icon'>
+        <text class="iconfont icon-zhuye" bindtap='copyBlog'></text>
+        <text class="iconfont icon-github" bindtap='copyGithub'></text>
+        <text class="iconfont icon-duanxin" bindtap="copyMail"></text>
+        <text class="iconfont icon-phone" bindtap='actionSheetTap'></text>
+      </view>
+    </view>
+  </view>
+
+
+  <view id='body'>
+    <!-- 个人技能 -->
+    <!-- 教育经历 -->
+    <view>
+      <view class='subtitle'>
+        <view></view>
+        <text>教育经历</text>
+        <view></view>
+      </view>
+      <!-- <view>
+        <text>上海大学 • 电子信息技术 • 硕士 • 2014-2017</text>
+        <text>上海大学 • 通信工程 • 本科-保研 • 2010-2014</text>
+      </view> -->
+      <view wx:for="{{educations}}">
+        <component-work-experience companyName="{{item.companyName}}" position="{{item.position}}" dateRanges="{{item.dateRanges}}" explain="{{item.explain}}">
+        </component-work-experience>
+      </view>
+    </view>
+    <!-- 工作经历 -->
+    <view>
+      <view class='subtitle'>
+        <view></view>
+        <text>工作经历</text>
+        <view></view>
+      </view>
+      <view wx:for="{{experiences}}">
+        <component-work-experience companyName="{{item.companyName}}" position="{{item.position}}" dateRanges="{{item.dateRanges}}" explain="{{item.explain}}">
+        </component-work-experience>
+      </view>
+    </view>
+
+    <!-- 个人介绍 -->
+    <view id='person-introduce'>
+      <view class='subtitle'>
+        <view></view>
+        <text>自我介绍</text>
+        <view></view>
+      </view>
+      <view class='introduce-content'>
+        <text>{{introduce}}</text>
+      </view>
+
+    </view>
+    <view>
+      <view class='subtitle'>
+        <view></view>
+        <text>工作技能</text>
+        <view></view>
+      </view>
+
+      <view>
+        <text class='skill'>技能</text>
+        <text class='tag'>掌握</text>
+
+        <view class='detail' wx:for="{{technologies}}">
+          <view>{{index+1}}. {{item}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

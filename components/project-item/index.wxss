@@ -1,0 +1,57 @@
+/* 项目经验组件样式 */
+.project-title {
+  margin: 3% 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.project-title view {
+  flex: 1;
+  height: 1px;
+  background-color: #eee;
+}
+
+.project-title text {
+  background-color: #eee;
+  color: #00b38a;
+  margin: 0 1%;
+  padding: 1% 8%;
+  border-radius: 30px;
+}
+
+.project-box{
+  padding: 4% 0;
+}
+
+.project-name {
+  display: inline-block;
+  font-size: 90%;
+  font-weight: 600;
+  margin-bottom: 2%;
+}
+
+.tag {
+  float: right;
+  font-size: 70%;
+  color: #00b38a;
+  border: 1px solid #00b38a;
+  padding: 0 1%;
+  border-radius: 5px;
+}
+
+.project-subname {
+  font-size: 85%;
+}
+
+.explain {
+  display: flex;
+  flex-direction: column;
+}
+
+.explain text{
+  margin-left: 2px;
+  font-size: 85%;
+  text-indent:3%;
+  line-height: 150%
+}

@@ -1,0 +1,34 @@
+<!-- 项目经验组件模板 -->
+<view class='project-item'>
+  <view class='project-title'>
+    <view></view>
+    <text>{{projectNum}}</text>
+    <view></view>
+  </view>
+
+  <view class='project-box'>
+    <text class='project-name'>{{projectName}}</text>
+    <text class='tag' bindtap='copyDemo'>{{projectType}}</text>
+    <view>
+      <text class='project-subname'>项目描述：</text>
+      <view class='explain'>
+        <text>{{projectDesc}}</text>
+      </view>
+      <view></view>
+    </view>
+    <view>
+      <text class='project-subname'>技术要点：</text>
+      <view class='explain'>
+        <text>{{skillDesc}}</text>
+      </view>
+      <view></view>
+    </view>
+    <view>
+      <text class='project-subname'>责任描述：</text>
+      <view class='explain' wx:for="{{responsibilityDesc}}">
+        <text>{{item}}</text>
+      </view>
+      <view></view>
+    </view>
+  </view>
+</view>
