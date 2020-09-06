@@ -36,8 +36,8 @@
   },
   "compileType": "miniprogram",
   "libVersion": "2.3.0",
-  "appid": "wxcc41634c44a711ce",
-  "projectname": "resume-demo",
+  "appid": "",
+  "projectname": "resume-miniprogram",
   "debugOptions": {
     "hidedInDevtools": []
   },
